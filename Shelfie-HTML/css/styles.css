@@ -187,6 +187,25 @@ h2 {
   padding: 2em;
 }
 
+#recommended-books-ctr.grid-view ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+#recommended-books-ctr.grid-view .book-row {
+  width: auto;
+  height: auto;
+  flex-direction: column;
+}
+
+#recommended-books-ctr.grid-view .book-row img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+
 .genre-section {
   max-width: 1000px;
   margin: 40px auto;
