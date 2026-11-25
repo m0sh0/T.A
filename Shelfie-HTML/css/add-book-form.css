@@ -1,0 +1,33 @@
+#book-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+}
+
+#book-form label {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+#book-form input {
+    width: 300px;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#book-form select {
+    width: 300px;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#cover-preview {
+    display: none;
+    max-width: 120px;
+    margin-bottom: 1em;
+}

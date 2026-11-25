@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shelfie</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h2>Shelfie</h2>
+        <nav id="main-nav">
+            <a href="../index.html">Home</a>
+            <a href="./book-list.html">My Shelfie</a>
+        </nav>
+    </header>
+    <main>
+        <h1 class="title">My Shelfie</h1>
+        <section aria-labelledby="books-heading">
+            <div class="status-filter">
+                <label for="status-filter">Filter by status:</label>
+                <select id="status-filter">
+                    <option value="all">All books</option>
+                    <option value="Reading">Reading</option>
+                    <option value="To Read">Want to Read</option>
+                    <option value="Already Read">Already Read</option>
+                </select>
+            </div>
+            <div id="books-list">
+                <article class="book-card" data-status="Already Read">
+                    <div class="content">
+                        <h3>Rich dad poor dad</h3>
+                        <img src="../images/rich-dad-poor-dad.jpg" alt="Rich Dad Poor Dad">
+                        <p>By: Robert Kiyosaki</p>
+                        <p>Pages: 320</p>
+                        <p class="already-read-status">Already Read</p>
+                    </div>
+                </article>
+                <article class="book-card" data-status="Reading">
+                    <div class="content">
+                        <h3>48 Laws of Power</h3>
+                        <img src="../images/48-laws-of-power.jpg" alt="48 Laws of Power">
+                        <p>By: Robert Greene</p>
+                        <p>Pages: 320</p>
+                        <p class="reading-status">Reading</p>
+                    </div>
+                </article>
+                <article class="book-card" data-status="To Read">
+                    <div class="content">
+                        <h3>Crime and Punishment</h3>
+                        <img src="../images/crime-and-punishment.jpg" alt="Crime and Punishment">
+                        <p>By: Fyodor Dostoevsky</p>
+                        <p>Pages: 544</p>
+                        <p class="want-to-read-status">Want to Read</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <a href="add-book-form.html" class="btn-primary">+ Add Book</a>
+    </main>
+    <script src="../js/index.js"></script>
+</body>
+</html>
