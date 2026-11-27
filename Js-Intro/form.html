@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+  <h2>Sign Up Form</h2>
+
+  <form>
+
+    <!-- Text Box -->
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <!-- Email Box -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <!-- Password Box -->
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <!-- Date Picker -->
+    <label for="birthday">Birthday:</label><br>
+    <input type="date" id="birthday" name="birthday" required><br><br>
+
+    <!-- Dropdown Menu -->
+    <label for="country">Country:</label><br>
+    <select id="country" name="country">
+      <option value="bulgaria">Bulgaria</option>
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+      <option value="other">Other</option>
+    </select><br><br>
+
+    <!-- Radio Buttons -->
+    <p>Gender:</p>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+
+    <!-- Checkboxes -->
+    <p>Hobbies:</p>
+    <input type="checkbox" id="gaming" name="hobby" value="gaming" required>
+    <label for="gaming">Gaming</label><br>
+
+    <input type="checkbox" id="music" name="hobby" value="music" required>
+    <label for="music">Music</label><br>
+
+    <input type="checkbox" id="sports" name="hobby" value="sports" required>
+    <label for="sports">Sports</label><br><br>
+
+    <!-- Big Text Box -->
+    <label for="about">About You:</label><br>
+    <textarea id="about" name="about" rows="4" cols="30"></textarea><br><br>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Send Form">
+
+  </form>
+  <script src="./js/form.js"></script>
+</body>
+</html>
